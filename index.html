@@ -3,266 +3,350 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <title>MANIT Alumni Meet</title>
+  <title>MANIT Alumnis' Meet 2023</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+      },
+      plugins: [
+        require('@tailwindcss/line-clamp')
+      ],
+    }
+  </script>
   <style>
-    
-    .gradient-text {
-      background: linear-gradient(180deg, #00E0FF 0%, rgba(0, 224, 255, 0.4) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    
-    .bg-custom-radial {
-      background: radial-gradient(100% 159.69% at 100% 100%, #120E3D 0%, #000000 100%);
-    }
-
-    .opp-bg{background: radial-gradient(119.89% 119.89% at 16.48% 11.93%, #00E0FF 0%, #0044F2 100%) ;
-    }
-    body{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Poppins:wght@600&display=swap');
+    body {
       font-family: 'Poppins', sans-serif;
+    }
+    main{background: radial-gradient(100% 159.69% at 100% 100%, #120E3D 0%, #000000 100%);}
+
+    .gradient-circle {
+      background: radial-gradient(127.84% 127.84% at 16.48% 11.93%, #00E0FF 0%, #0044F2 100%);
+    }
+    .caveat-font {
+      font-family: 'Caveat', cursive;
+    }
+    .gradient-button {
+      background: linear-gradient(270deg, #00E0FF 0%, #0044F2 100%);
+    }
+    .gradient-reg-button {
+      background: linear-gradient(89.97deg, #0044F2 0.08%, #00E0FF 99.94%);
+    }
+    
+    input::placeholder, textarea::placeholder {
+      font-style: italic;
+      color: rgba(153, 153, 153, 1);
+    }
+    
+    .heading-border {
+      border-bottom: 2px solid rgba(0, 224, 255, 1);
+      width: 180px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
-  <div class="bg-black py-12"></div>
-<div class="bg-custom-radial min-h-screen flex items-center justify-center">
-  <div class="text-center px-4 md:px-10 lg:px-32 py-8">
+
+<!--Main Section-->
+<main class="text-white">
+
+  
+  <div class="bg-black h-12"></div>
+
+  
+  <section class="flex flex-col items-center justify-center text-center min-h-screen px-4 lg:px-0">
     
-    <p class="text-white text-lg md:text-xl mb-2">Entrepreneurship Cell presents</p>
+    <p class="text-lg md:text-xl mb-4">Entrepreneurship Cell presents</p>
     
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-semibold text-cyan-400 mb-2">MANIT Alumnis'</h1>
     
-    <h1 class="gradient-text text-4xl md:text-6xl lg:text-7xl font-bold mb-2">MANIT Alumnis'</h1>
-    <h2 class="text-white text-3xl md:text-5xl lg:text-6xl font-bold mb-6">Meet 2023</h2>
+    <h2 class="text-3xl md:text-5xl lg:text-6xl font-normal mb-8">Meet 2023</h2>
     
-    
-    <div class="flex flex-col items-center mt-4 mb-10 text-white space-y-4 md:space-y-0 md:flex-row md:space-x-8 lg:space-x-12">
-      <div class="flex items-center">
-        <img src="pictures\calendar-alt.png" alt="calender" class="w-[40px] h-[40px]" >
+    <div class="flex flex-col md:flex-row md:space-x-8 items-center text-white mb-8">
+      <div class="flex items-center space-x-2">
+        <img src="pictures/calendar-alt.png" alt="calendar" class="w-8 h-8">
         <span>11-12 Feb 2023</span>
       </div>
-      <div class="flex items-center ml-24 pl-10">
-        <img src="pictures\carbon_location-filled.png" alt="location" class="w-[40px] h-[40px]" >
+      <div class="flex items-center space-x-2 mt-4 md:mt-0">
+        <img src="pictures\carbon_location-filled (1).png" alt="location" class="w-8 h-8">
         <span>MANIT Bhopal, India</span>
       </div>
     </div>
 
     
-    <div class="mt-10">
-      <button class="bg-white text-black px-8 py-3  shadow-lg hover:bg-gray-300">Contact Us</button>
+    <div>
+      <button class="bg-white text-black px-8 py-3 shadow-lg hover:bg-gray-300">Contact Us</button>
     </div>
-  </div>
-  </div>
+  </section>
+</main>
 
 
-  <div class="bg-white flex justify-center items-center h-80 -mt-32">
 
-    <section class="w-full max-w-screen-lg px-4">
-      
-      <div class="text-center -mt-20">
-        <div class="flex justify-center items-center gap-4">
-          <span class="hidden md:block w-20 h-[2px] bg-cyan-400"></span>
-          <h2 class="text-2xl md:text-3xl font-semibold">About the Event</h2>
-          <span class="hidden md:block w-20 h-[2px] bg-cyan-400"></span>
-        </div>
-  
-        <div class="flex justify-center items-center gap-4 md:hidden">
-          <span class="w-12 h-[2px] bg-cyan-400"></span>
-          <span class="w-12 h-[2px] bg-cyan-400"></span>
-        </div>
-  
-        
-        <p class="three-line-paragraph mt-4 mx-auto text-gray-500" >
-          Alumni Reunion is a jubilant event aimed at celebrating the imperial legacy of graduated pupil of Maulana Azad National Institute of Technology. This annual conference will consist of diverse insightful activities and interactive sessions from accomplished alums contributing conscientiously in the field of entrepreneurship and technological advancements.
-        </p>
-      </div>
-    </section>
-  </div>
-  
-  
-  
+
+<!-- About the Event Section -->
+<section class="bg-white px-4 py-8 lg:px-24 lg:py-16 text-center">
    
-    <section class="relative flex flex-col items-center justify-center py-12 bg-[rgb(243,243,243)]">
-        <h2 class="text-3xl font-semibold mb-8">Opportunities</h2>
-        <img src="pictures\Mask group (1).png" alt="img" class="absolute top-0 right-0 w-32 h-64 -mt-40">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-11/12 ">
-            
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-                <div class="opp-bg p-4 rounded-full mb-4">
-                    <img src="alumni-icon.png" alt="Alumni Get Together" class="w-10 h-10">
-                </div>
-                <h3 class="text-lg font-medium">Alumni Get Together</h3>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-                <div class="opp-bg p-4 rounded-full mb-4">
-                    <img src="cultural-icon.png" alt="Cultural Activities" class="w-10 h-10">
-                </div>
-                <h3 class="text-lg font-medium">Cultural Activities</h3>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-                <div class="opp-bg p-4 rounded-full mb-4">
-                    <img src="games-icon.png" alt="Games & Fun Activities" class="w-10 h-10">
-                </div>
-                <h3 class="text-lg font-medium">Games & Fun Activities</h3>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-                <div class="opp-bg p-4 rounded-full mb-4">
-                    <img src="investing-icon.png" alt="Investing in Startup Expo" class="w-10 h-10">
-                </div>
-                <h3 class="text-lg font-medium">Investing Opportunities in Startup Expo</h3>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-                <div class="opp-bg p-4 rounded-full mb-4">
-                    <img src="buffet-icon.png" alt="Appetizing Buffet" class="w-10 h-10">
-                </div>
-                <h3 class="text-lg font-medium">Appetizing Buffet</h3>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-                <div class="opp-bg p-4 rounded-full mb-4">
-                    <img src="group-photo-icon.png" alt="Group Photographs" class="w-10 h-10">
-                </div>
-                <h3 class="text-lg font-medium">Group Photographs</h3>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-                <div class="opp-bg p-4 rounded-full mb-4">
-                    <img src="passes-icon.png" alt="Free Passes of E-Summit 23" class="w-10 h-10">
-                </div>
-                <h3 class="text-lg font-medium">Free Passes of E-Summit 23</h3>
-            </div>
-            
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-                <div class="opp-bg p-4 rounded-full mb-4">
-                    <img src="hiring-icon.png" alt="Hiring Opportunities" class="w-10 h-10">
-                </div>
-                <h3 class="text-lg font-medium">Hiring Opportunities to Student Community</h3>
-            </div>
+    <div class="flex items-center justify-center mb-8">
+      <div class="border-t-2 border-cyan-400 w-16 md:w-24 lg:w-32"></div>
+      <h2 class="mx-4 text-xl md:text-2xl lg:text-3xl font-bold">About the Event</h2>
+      <div class="border-t-2 border-cyan-400 w-16 md:w-24 lg:w-32"></div>
+    </div>
+
+    
+    <p class="text-gray-600 text-sm md:text-base lg:text-lg max-w-4xl mx-auto">
+      Alumni Reunion is a jubilant event aimed at celebrating the imperial legacy of graduated pupils of Maulana Azad National Institute of Technology. This annual conference will consist of diverse insightful activities and interactive sessions from accomplished alums contributing conscientiously in the field of entrepreneurship and technological advancements. As a part of our upcoming megafest, E-Summit'23, our team will be organizing an Alumni Meet to reminisce the yesteryears and share their insights from the corporate world.
+    </p>
+  </section>
+
+  <!--Opportunity Section-->
+
+
+  <section class="py-12 bg-gray-200 relative -z-10">
+    <img src="pictures\Mask group (1).png" alt="img" class="absolute z-10 top-0 right-0 w-64 h-128 -mt-80" >
+    <div class="text-center mb-10">
+      <h2 class="text-xl md:text-3xl font-bold">Opportunities</h2>
+    </div>
+
+    
+    <div class="flex flex-wrap justify-center items-center gap-10 mx-4 lg:mx-12">
+
+      
+      <div class="bg-white rounded-2xl shadow-lg p-6 w-64 h-64 flex flex-col items-center justify-center">
+        <div class="gradient-circle w-16 h-16 flex items-center justify-center rounded-full">
+          <img src="pictures\Frame.png" alt="Cultural Activities Icon" class="w-8 h-8"> 
         </div>
-    </section>
+        <p class="mt-4 text-center font-semibold">Alumni<br> Get Together</p>
+      </div>
+
+      
+      <div class="bg-white rounded-2xl shadow-lg p-6 w-64 h-64 flex flex-col items-center justify-center">
+        <div class="gradient-circle w-16 h-16 flex items-center justify-center rounded-full">
+          <img src="pictures\Vector.png" alt="Cultural Activities Icon" class="w-8 h-8"> 
+        </div>
+        <p class="mt-4 text-center font-semibold">Cultural<br> Activities</p>
+      </div>
+
+      
+      <div class="bg-white rounded-2xl shadow-lg p-6 w-64 h-64 flex flex-col items-center justify-center">
+        <div class="gradient-circle w-16 h-16 flex items-center justify-center rounded-full">
+          <img src="pictures\fun icon.png" alt="Games Icon" class="w-8 h-8"> 
+        </div>
+        <p class="mt-4 text-center font-semibold">Games & <br>Fun Activities</p>
+      </div>
 
 
-    <section class="bg-[radial-gradient(95.68%_96.91%_at_0%_2.36%,_#00E0FF_0%,_#0044F2_100%)] h-screen flex justify-center items-center">
+      <div class="bg-white rounded-2xl z-20 shadow-lg p-6 w-64 h-64 flex flex-col items-center justify-center">
+        <div class="gradient-circle w-16 h-16 flex items-center justify-center rounded-full">
+          <img src="pictures\Frame (1).png" alt="Startup Expo Icon" class="w-8 h-8"> 
+        </div>
+        <p class="mt-4 text-center font-semibold z-10">Investing <br>opportunities in <br>Startup Expo</p>
+      </div>
 
-      <div class="bg-white rounded-lg shadow-lg w-full max-w-2xl p-6 md:p-8 overflow-hidden">
-        
-        
+  
+      <div class="bg-white rounded-2xl shadow-lg p-6 w-64 h-64 flex flex-col items-center justify-center">
+        <div class="gradient-circle w-16 h-16 flex items-center justify-center rounded-full">
+          <img src="pictures\Frame (2).png" alt="Buffet Icon" class="w-8 h-8"> 
+        </div>
+        <p class="mt-4 text-center font-semibold">Appetizing <br> Buffet</p>
+      </div>
 
-        <div class="text-center pb-10">
-          <div class="flex justify-center items-center gap-4">
-            <span class="hidden md:block w-20 h-[2px] bg-cyan-400"></span>
-            <h2 class="text-2xl md:text-3xl font-semibold">Register for event</h2>
-            <span class="hidden md:block w-20 h-[2px] bg-cyan-400"></span>
-          </div>
+   
+      <div class="bg-white rounded-2xl shadow-lg p-6 w-64 h-64 flex flex-col items-center justify-center">
+        <div class="gradient-circle w-16 h-16 flex items-center justify-center rounded-full">
+          <img src="pictures\mdi_account-group-outline.png" alt="Photographs Icon" class="w-8 h-8"> 
+        </div>
+        <p class="mt-4 text-center font-semibold">Group <br> Photographs</p>
+      </div>
+
+      
+      <div class="bg-white rounded-2xl shadow-lg p-6 w-64 h-64 flex flex-col items-center justify-center">
+        <div class="gradient-circle w-16 h-16 flex items-center justify-center rounded-full">
+          <img src="pictures\Frame (3).png" alt="Free Passes Icon" class="w-8 h-8"> 
+        </div>
+        <p class="mt-4 text-center font-semibold">Free Passes<br> of E-Summit 23</p>
+      </div>
+
+      
+      <div class="bg-white rounded-2xl shadow-lg p-6 w-64 h-64 flex flex-col items-center justify-center">
+        <div class="gradient-circle w-16 h-16 flex items-center justify-center rounded-full">
+          <img src="pictures\Frame (4).png" alt="Hiring Icon" class="w-8 h-8"> 
+        </div>
+        <p class="mt-4 text-center font-semibold">Hiring opportunities<br> to Student<br> Community</p>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Form Section-->
+
+<section class="bg-gradient-to-r from-[#00E0FF] to-[#0044F2] flex justify-center items-center min-h-screen pb-20">
+
+  <section class="form-section bg-white rounded-xl shadow-lg w-full max-w-4xl mx-auto my-8">
     
-          <div class="flex justify-center items-center gap-4 md:hidden">
-            <span class="w-12 h-[2px] bg-cyan-400"></span>
-            <span class="w-12 h-[2px] bg-cyan-400"></span>
-          </div>
+    
+    <div class="text-center mt-8">
+      <div class="flex justify-between items-center w-full px-10">
+        <div class="heading-border"></div>
+        <h2 class="text-3xl font-semibold leading-[54px] text-black">
+          Register for event
+        </h2>
+        <div class="heading-border"></div>
+      </div>
+    </div>
+
+    
+    <form class="px-10 md:px-16 py-8">
+
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-[1px] mt-8">
+        <input type="text" placeholder="First name" class="bg-[#F5F5F5] p-4  outline-none focus:ring-2 ring-blue-300">
+        <input type="text" placeholder="Last name" class="bg-[#F5F5F5] p-4  outline-none focus:ring-2 ring-blue-300">
+      </div>
+
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-[1px] mt-6">
+        <input type="text" placeholder="Branch" class="bg-[#F5F5F5] p-4  outline-none focus:ring-2 ring-blue-300">
+        <input type="text" placeholder="Year of Passing" class="bg-[#F5F5F5] p-4  outline-none focus:ring-2 ring-blue-300">
+      </div>
+
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-[1px] mt-6">
+        <input type="text" placeholder="Contact No." class="bg-[#F5F5F5] p-4  outline-none focus:ring-2 ring-blue-300">
+        <input type="email" placeholder="E-mail" class="bg-[#F5F5F5] p-4  outline-none focus:ring-2 ring-blue-300">
+      </div>
+
+      
+      <div class="mt-6">
+        <input type="text" placeholder="Occupation" class="bg-[#F5F5F5] w-full p-4  outline-none focus:ring-2 ring-blue-300">
+      </div>
+
+      
+      <div class="mt-6">
+        <input type="text" placeholder="College Achievement" class="bg-[#F5F5F5] w-full p-4  outline-none focus:ring-2 ring-blue-300">
+      </div>
+
+     
+      <div class="mt-6">
+        <textarea placeholder="Brief Profile" class="bg-[#F5F5F5] w-full p-4  outline-none focus:ring-2 ring-blue-300"></textarea>
+      </div>
+
+      
+      <div class="mt-6">
+        <input type="text" placeholder="Special Achievements" class="bg-[#F5F5F5] w-full p-4  outline-none focus:ring-2 ring-blue-300">
+      </div>
+
+      
+      <div class="mt-6">
+        <textarea placeholder="Message for your batchmates" class="bg-[#F5F5F5] w-full p-4  outline-none focus:ring-2 ring-blue-300"></textarea>
+      </div>
+
+      
+      <div class="mt-8 text-center">
+        <button type="submit" class="gradient-reg-button text-white text-lg py-4 px-8  flex items-center justify-center mx-auto">
+          Register Now
+          <span class="ml-2">&rarr;</span>
+        </button>
+      </div>
+
+    </form>
+    
+  </section>
+
+</section>
+
+
+
+
+<!--Subscribe Section-->
+
+<section class="flex justify-center items-center z-10 w-full">
+
+  <div class="bg-white rounded-3xl shadow-lg p-4 md:p-10 flex flex-col md:flex-row justify-around items-center w-full max-w-7xl  mt-[-5%] ">
+    
+    
+    <div class="text-center md:text-left mb-6 md:mb-0">
+      <div class="t1">
+        <p class="text-[#0044F2] caveat-font text-lg md:text-2xl font-light">Don't Miss our updates</p>
+      </div>
+      <div class="t2 text-4xl md:text-6xl font-bold">Subscribe Now</div>
+    </div>
+    
+    
+    <div class="bg-gray-200 shadow-lg rounded-full flex items-center justify-between w-full max-w-md h-16 px-6">
+      <input type="text" placeholder="Enter your mail..." class="flex-grow text-lg text-inherit outline-none bg-transparent placeholder-[ #999999]">
+      <button class="bg-gradient-to-l from-[#00E0FF] to-[#0044F2] text-white font-medium rounded-full py-3 px-6 ml-4 hover:opacity-90 transition-opacity">
+        Subscribe
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+  <!-- Footer Section -->
+  <footer class="bg-white py-10 px-8">
+    
+    <div class="border-t-2 border-cyan-400 mb-6"></div>
+  
+    
+    <div class="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0">
+      
+      <div class="flex flex-col space-y-4">
+        <p class="text-base font-medium">Pratham Patidar     9294836692</p>
+        
+        <p class="text-base font-medium">Anuraj Shrivastava  8962970385</p>
        
-        <form class="space-y-4 pt-10 italic">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 italic">
-            <div>
-              <input type="text" id="first-name" placeholder="First name" class="w-full p-3 border italic border-gray-300 rounded-md bg-gray-100 placeholder-italic text-sm">
-            </div>
-            <div>
-              <input type="text" id="last-name" placeholder="Last name" class="w-full p-3 border italic border-gray-300 rounded-md bg-gray-100 placeholder-italic text-sm">
-            </div>
-          </div>
-    
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <input type="text" id="branch" placeholder="Branch" class="w-full p-3 border italic border-gray-300 rounded-md bg-gray-100 placeholder-italic text-sm">
-            </div>
-            <div>
-              <input type="text" id="year-of-passing" placeholder="Year of Passing" class="w-full p-3 border italic border-gray-300 rounded-md bg-gray-100 placeholder-italic text-sm">
-            </div>
-          </div>
-    
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <input type="text" id="contact-no" placeholder="Contact No." class="w-full p-3 border italic border-gray-300 rounded-md bg-gray-100 placeholder-italic text-sm">
-            </div>
-            <div>
-              <input type="email" id="email" placeholder="E-mail" class="w-full p-3 border italic border-gray-300 rounded-md bg-gray-100 placeholder-italic text-sm">
-            </div>
-          </div>
-    
-          <div>
-            <input type="text" id="occupation" placeholder="Occupation" class="w-full p-3 border italic border-gray-300 rounded-md bg-gray-100 placeholder-italic text-sm">
-          </div>
-    
-          <div>
-            <input type="text" id="college-achievement" placeholder="College Achievement" class="w-full p-3 border italic border-gray-300 rounded-md bg-gray-100 placeholder-italic text-sm">
-          </div>
-    
-          <div>
-            <input type="text" id="brief-profile" placeholder="Brief Profile" class="w-full p-3 border italic border-gray-300 rounded-md bg-gray-100 placeholder-italic text-sm">
-          </div>
-    
-          <div>
-            <input type="text" id="special-achievements" placeholder="Special Achievements" class="w-full p-3 border italic border-gray-300 rounded-md bg-gray-100 placeholder-italic text-sm">
-          </div>
-    
-          <div>
-            <input type="text" id="message-batchmates" placeholder="Message for your batchmates" class="w-full p-3 border italic border-gray-300 rounded-md bg-gray-100 placeholder-italic text-sm">
-          </div>
-    
+        <p class="text-base font-medium">Chirayu Sood        8251027550</p>
+        
+        <p class="text-base font-medium">Arnav Bangaria      6265174401</p>
+        
+      </div>
+  
+     
+      <div class="flex flex-col space-y-4 text-base ">
+        <div class="flex items-center ">
           
-          <div class="text-center mt-8">
-            <button class="w-full md:w-1/2 py-3 bg-gradient-to-r from-[#0044F2] to-[#00E0FF] text-white font-bold rounded-lg flex items-center justify-center hover:opacity-90 transition-opacity mx-auto">
-              Register Now <span class="ml-2"></span>
-            </button>
-          </div>
-        </form>
+          <p>Maulana Azad National Institute of Technology, Bhopal India - 462003</p>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-envelope text-blue-500"></i>
+          <p>support@ecellnitb.com</p>
+        </div>
       </div>
-    
-    </section>
-    <div>
-      <div>
-        <p>Pratham Patidar</p>
-        <p>9294836692</p>
+  
+     
+      <div class="flex flex-col items-start space-y-4">
+        <div class="flex space-x-4">
+          <a href="#" class="text-blue-500"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-blue-500"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-blue-500"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-blue-500"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-      <div>
-        <p>Anuraj Shrivastava</p>
-        <p>8962970385</p>
-      </div>
-      <div>
-        <p>Chirayu Sood</p>
-        <p>8251027550</p>
-      </div>
-      <div>
-        <p>Arnav Bangaria</p>
-        <p>6265174401</p>
-      </div>
-    </div>
-    <div>
-      <span>ABOUT EVENT</span>
-      <span>REGISTER</span>
-      <span>E-CELL MANIT</span>
-      <span>E-SUMMIT 23'</span>
-    </div>
-    
-    <div>
-      <p><span> </span>Maulana Azad National Institute of Technology, Bhopal India - 462003</p>
-      <p><span> </span>support@ecellnitb.com</p>
-    </div>
-    <div>
-      <span> </span> 
-      <span> </span> 
-      <span> </span> 
-    </div>
-    
-    <div>
-      <p>Copyright © 2023 • E-Cell MANIT Bhopal</p>
     </div>
   
+    
+    <div class="flex flex-col lg:flex-row justify-between items-center mt-6 space-y-4 lg:space-y-0">
+      
+      <div class="flex space-x-8 text-sm font-medium">
+        <a href="#" class="hover:text-blue-500">ABOUT EVENT</a>
+        <a href="#" class="hover:text-blue-500">REGISTER</a>
+        <a href="#" class="hover:text-blue-500">E-CELL MANIT</a>
+        <a href="#" class="hover:text-blue-500">E-SUMMIT 23'</a>
+      </div>
+  
+      
+      <div class="text-sm text-gray-500">
+        Copyright © 2023 • E-Cell MANIT Bhopal
+      </div>
+    </div>
+  </footer>
+
+
 </body>
 </html>
